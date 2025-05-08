@@ -10,7 +10,6 @@ COPY src src
 
 RUN chmod +x gradlew && ./gradlew clean build -x test --no-daemon
 
-# Финальный образ
 FROM eclipse-temurin:17-jre-jammy
 
 WORKDIR /app
